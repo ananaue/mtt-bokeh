@@ -1,6 +1,6 @@
 # MTT-Bokeh
 
-Generate graphs and IC50s from MTT raw .xlsx data in bulk.
+Generate graphs and IC50s from raw .xlsx MTT data in bulk.
 
 - Supports only the "pchip" (Piecewise Cubic Hermite Interpolating Polynomial) regression currently. Functionality for "akima", "4PL", "5PL", "b-spline", "catmull_rom", and/or straight lines will be added back in the future.
 - Written without the use of AI tools.
@@ -48,4 +48,5 @@ Required *filetags* are `MC` ("mortality control") and `VC` ("vitality control")
 - IC50s.csv output may have an issue with encoding of "±". Also, it currently does not distinguish very well between missing data vs where an IC50 could not be calculated (such as when it is not reached in the given concentration range).
 
 Note that the analysis does not currently correct for dead cell debris background.
+
 - Along with a media control (here, used as `MC`) and a cells-only one (`VC`), a known 100% cytotoxicity control would be ideal. Changes would need to be made to the script to support it (potentially adding a `BC` tag (background control) and changing the calculation section)
