@@ -7,7 +7,7 @@ Generate graphs and IC50s from raw .xlsx MTT data in bulk.
 - A small set of example data is provided in `./rawdata`. It generates the following example output:
 
 <p align="center">
-  <img src="output/2026-02-08 19,27,52.019725/image.png" width="700" alt="Example output of MTT-Bokeh, showing a grid of 6 4-drug cytoxicity curves with IC50 values in their legends.">
+  <img src="output/2026-02-08 19,27,52.019725/image.png" width="775" alt="Example output of MTT-Bokeh, showing a grid of 6 4-drug cytoxicity curves with IC50 values in their legends.">
 </p>
 
 ## 1. Requirements
@@ -50,3 +50,4 @@ Required *filetags* are `MC` ("mortality control") and `VC` ("vitality control")
 Note that the analysis does not currently correct for dead cell debris background.
 
 - Along with a media control (here, used as `MC`) and a cells-only one (`VC`), a known 100% cytotoxicity control would be ideal. Changes would need to be made to the script to support it (potentially adding a `BC` tag (background control) and changing the calculation section)
+
