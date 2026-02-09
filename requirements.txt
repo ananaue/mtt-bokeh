@@ -1,0 +1,9 @@
+bokeh
+pandas
+openpyxl
+scipy
+scikit-learn
+regex
+numpy
+pathlib
+selenium
