@@ -11,7 +11,7 @@ Generate graphs and IC50s from raw .xlsx MTT data in bulk.
 </p>
 
 ## 1. Requirements
-- Install selenium and either gecko or chromedriver, as discussed under ["install with pip" (unless using conda)](https://docs.bokeh.org/en/latest/docs/user_guide/output/export.html). If using windows, Add the folder containing the driver in Path under User Environment Variables (different process for mac/linux)
+- Install Selenium and either Gecko or Chromedriver, as discussed under ["install with pip" (unless using Conda)](https://docs.bokeh.org/en/latest/docs/user_guide/output/export.html). If using Windows, add the folder containing the driver in Path under User Environment Variables (different process for Mac/Linux)
   - This is needed for PNG and SVG export.
 - Install packages listed in requirements.txt (run `pip install -r requirements.txt`)
 
@@ -50,4 +50,5 @@ Required *filetags* are `MC` ("mortality control") and `VC` ("vitality control")
 Note that the analysis does not currently correct for dead cell debris background.
 
 - Along with a media control (here, used as `MC`) and a cells-only one (`VC`), a known 100% cytotoxicity control would be ideal. Changes would need to be made to the script to support it (potentially adding a `BC` tag (background control) and changing the calculation section)
+
 
